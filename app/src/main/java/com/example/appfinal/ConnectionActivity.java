@@ -20,7 +20,7 @@ public class ConnectionActivity extends AppCompatActivity {
         TextView bienvenida =(TextView) findViewById(R.id.Bienvenida);
         Button conectar= (Button) findViewById(R.id.conectar);
         String cadena_bienvenida=  getIntent().getStringExtra("username");
-        bienvenida.setText("Bienvenido "+ cadena_bienvenida + "al juego");
+        bienvenida.setText("Bienvenido "+ cadena_bienvenida + " al juego");
 
         ActivityResultLauncher<Intent> startActivityForResult = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
